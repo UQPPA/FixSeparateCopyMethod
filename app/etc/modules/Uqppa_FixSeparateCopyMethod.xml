@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Uqppa_FixSeparateCopyMethod>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Core/>
+
+            </depends>
+        </Uqppa_FixSeparateCopyMethod>
+    </modules>
+</config>

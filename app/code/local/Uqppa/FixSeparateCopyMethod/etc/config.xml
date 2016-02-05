@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Uqppa_FixSeparateCopyMethod>
+            <version>0.1.0</version>
+        </Uqppa_FixSeparateCopyMethod>
+    </modules>
+    <global>
+        <models>
+            <uqppa_fixseparatecopymethod>
+                <class>Uqppa_FixSeparateCopyMethod_Model</class>
+            </uqppa_fixseparatecopymethod>
+            <core_resource>
+                <rewrite>
+                    <email_queue>Uqppa_FixSeparateCopyMethod_Model_Core_Resource_Email_Queue</email_queue>
+                </rewrite>
+            </core_resource>
+        </models>
+        <helpers>
+            <uqppa_fixseparatecopymethod>
+                <class>Uqppa_FixSeparateCopyMethod_Helper</class>
+            </uqppa_fixseparatecopymethod>
+        </helpers>
+    </global>
+</config>

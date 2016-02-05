@@ -10,16 +10,27 @@
             <uqppa_fixseparatecopymethod>
                 <class>Uqppa_FixSeparateCopyMethod_Model</class>
             </uqppa_fixseparatecopymethod>
-            <core>
-                <rewrite>
-                    <email_template>Uqppa_FixSeparateCopyMethod_Model_Core_Email_Template</email_template>
-                </rewrite>
-            </core>
+
         </models>
+
         <helpers>
             <uqppa_fixseparatecopymethod>
                 <class>Uqppa_FixSeparateCopyMethod_Helper</class>
             </uqppa_fixseparatecopymethod>
         </helpers>
+
+        <events>
+            <!-- Mage_Core_Model_Email_Queue has no $_eventPrefix -->
+            <model_save_after>
+                <observers>
+                    <uqppa_fixseparatecopymethod_core_email_queue_save_after>
+                        <type>singleton</type>
+                        <class>uqppa_fixseparatecopymethod/observer</class>
+                        <method>clearCoreEmailQueueRecipientsAfterSave</method>
+                    </uqppa_fixseparatecopymethod_core_email_queue_save_after>
+                </observers>
+            </model_save_after>
+        </events>
+
     </global>
 </config>

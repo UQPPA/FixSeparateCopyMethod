@@ -10,11 +10,11 @@
             <uqppa_fixseparatecopymethod>
                 <class>Uqppa_FixSeparateCopyMethod_Model</class>
             </uqppa_fixseparatecopymethod>
-            <core_resource>
+            <core>
                 <rewrite>
-                    <email_queue>Uqppa_FixSeparateCopyMethod_Model_Core_Resource_Email_Queue</email_queue>
+                    <email_template>Uqppa_FixSeparateCopyMethod_Model_Core_Email_Template</email_template>
                 </rewrite>
-            </core_resource>
+            </core>
         </models>
         <helpers>
             <uqppa_fixseparatecopymethod>
